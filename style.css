@@ -1,0 +1,210 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    height: 10%;
+    width: 100%;
+    background-color: #141C24;
+    display: flex;
+}
+.header-logo {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.header-nav {
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.header-nav-text {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition-duration: 0.4s;
+    text-align: center;
+    font-size: 16px;
+}
+.header-nav-text:hover {
+    border-bottom: 1px solid #BF1A1A;
+}
+.board {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141C24;
+}
+.board-img {
+height: 675px;
+width: 1265px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url('image 1.png');
+background-repeat: no-repeat;
+border: 1px solid rgba(1, 22, 208, 0.29);
+box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.26);
+border-radius: 26px;
+flex-direction: column;
+animation: k-border 3s infinite ease-in-out;
+}
+.board-img-text {
+    height: 20%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 180%;
+    color: #ECECEC;
+}
+.board-img-button {
+    height: 20%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.board-img-button-submit {
+    background: #141C24;
+    border: 1px solid #1B257E;
+    border-radius: 0px 20px 20px 20px;
+    width: 30%;
+    font-size: 24px;
+    color: #ECECEC;  
+    height: 60%;
+    transition-duration: 0.5s;
+}
+.board-img-button-submit:hover {
+    background-color: #CACACA;
+    color: black;
+}
+
+
+
+
+/*анимации*/
+@keyframes k-border {
+    0% {
+        box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.26);
+    }
+    20% {
+        box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.35);
+    }
+    50% {
+        box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.6);
+    }
+    80% {
+        box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.35);
+    }
+    100% {
+        box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.26);
+    }
+}
+.content {
+    height: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #141C24;
+}
+.content-block {
+    height: 40%;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-block-svg {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-top: 80px;
+}
+.content-block-text {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.content-block-text-h {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: white;
+}
+.content-block-text-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: white;
+}
+.content-block-button {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important;
+}
+.content-block-button-submit {
+    background: #CACACA;
+    border: 1px solid black;
+    border-radius: 0px 20px 20px 20px;
+    width: 30%;
+    height: 115px;
+    font-size: 24px;
+    color: black;  
+    height: 60%;
+    transition-duration: 0.5s;
+}
+.content-block-button-submit:hover {
+    background: #141C24;
+    color: white;
+    border: 1px solid #1B257E;
+    box-shadow: 0px 8px 24px 8px rgba(17, 131, 131, 0.26);
+    animation: k-border 3s infinite ease-in-out;
+}
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #171717;
+}
+.footer-svg1 {
+    margin-left: 50px;
+}
+.footer-svg2 {
+    margin-right: 50px;
+}
+
